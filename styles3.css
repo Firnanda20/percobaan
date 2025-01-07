@@ -1,0 +1,25 @@
+.card {
+    border: none;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: #007bff;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  footer {
+    background-color: #3a3b3b;
+    color: #6c757d;
+  }
+  

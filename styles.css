@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  nav {
+    background-color: #433c39;
+  }
+  
+  header {
+    background: linear-gradient(45deg, #100f0f, #433c39);
+    color: rgb(50, 49, 49);
+  }
+  
+  footer {
+    background-color: #737678;
+    color: #000000;
+  }
+  
+  img {
+    border: 3px solid #0a0d10;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("beground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+  }

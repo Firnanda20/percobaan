@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white text-center py-4">
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <h2 id="greeting" class="mt-4"></h2>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <div class="text-center">
+      <img src="profile.jpg" alt="Profile Picture" class="rounded-circle img-fluid" style="width: 150px;">
+      <h3 class="mt-4">Hello, I'm FIRNANDA TRI ROMADHON</h3>
+      <div id="greeting" class="h3 mb-4"></div>
+      <p class="lead">Mahasiswa in Universitas PGRI Madiun</p>
+      <a href="about.html" class="btn btn-light btn-lg mt-3">Learn More About Me</a>
+    </div>
+  </main>
+
+  <footer class="bg-light text-center py-2">
+    <p>© 2025 FIRNANDA. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const greetingElement = document.getElementById('greeting');
+    const currentHour = new Date().getHours();
+  
+    let greetingMessage = "Hello!";
+    if (currentHour >= 5 && currentHour < 12) {
+      greetingMessage = "Good Morning!";
+    } else if (currentHour >= 12 && currentHour < 18) {
+      greetingMessage = "Good Afternoon!";
+    } else {
+      greetingMessage = "Good Evening!";
+    }
+  
+    greetingElement.textContent = greetingMessage;
+  </script>
+  <script>
+    document.querySelectorAll('a.nav-link').forEach(anchor => {
+      anchor.addEventListener('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const target = document.querySelector(this.hash);
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+    
+</body>
+</html>

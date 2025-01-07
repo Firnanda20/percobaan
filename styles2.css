@@ -1,0 +1,17 @@
+main {
+    line-height: 1.8;
+  }
+  
+  h2, h3 {
+    color: #007bff;
+  }
+  
+  .list-group-item {
+    border: none;
+    background-color: #414142;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
